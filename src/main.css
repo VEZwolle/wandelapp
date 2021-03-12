@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    outline: none !important;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Alias */
+.flex-full {
+  @apply w-full h-full flex flex-col justify-center items-center;
+}
+
+/* Transitions */
+/* Fade */
+.fade-enter-active,
+.fade-leave-active {
+  @apply transition-opacity duration-500;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+/* Slide up */
+.slide-up-enter-active,
+.slide-up-leave-active {
+  @apply transition-transform duration-500;
+}
+
+.slide-up-enter-from,
+.slide-up-leave-to {
+  transform: translateY(calc(100% + 1.25rem));
+}
+
+.slide-up-enter-to,
+.slide-up-leave-from {
+  transform: translateY(0);
+}

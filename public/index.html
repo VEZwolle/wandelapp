@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl" class="w-full h-full">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Passie</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= process.env.VUE_APP_GOOGLE_ANALYTICS_ID %>"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '<%= process.env.VUE_APP_GOOGLE_ANALYTICS_ID %>');
+  </script>
+</head>
+
+<body class="w-full h-full bg-black">
+  <noscript>
+    <strong>Deze website werkt niet zonder JavaScript. Schakel het in om door te gaan.</strong>
+  </noscript>
+
+  <div id="app" class="w-full h-full"></div>
+</body>
+
+</html>
