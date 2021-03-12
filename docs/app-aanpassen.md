@@ -4,7 +4,7 @@ Deze handleiding kan gebruikt worden om de app aan te passen voor jouw wandelpro
 Enige handigheid met programmeercode en webhosting is vereist.
 
 ## Code downloaden
-Download de code van het project naar je eigen computer.
+[Download de code van het project](https://github.com/VEZwolle/wandelapp/archive/master.zip) naar je eigen computer.
 
 ## Accounts aanmaken
 De app maakt gebruik van een tweetal externe services.
