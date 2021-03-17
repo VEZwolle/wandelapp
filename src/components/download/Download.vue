@@ -12,7 +12,9 @@
       <DownloadToggle class="mb-8" />
 
       <p class="text-xs">
-        De download is 450 mb. Offline modus werkt mogelijk niet op oudere telefoons.
+        <span v-if="state.route.offlineAvailable">Je kunt de data weer verwijderen door bovenstaande switch terug naar 'nee' te zetten.</span>
+        <span v-else>De download is 450 mb.</span>
+        <br>Offline modus werkt mogelijk niet op oudere telefoons.
       </p>
     </div>
   </Modal>
